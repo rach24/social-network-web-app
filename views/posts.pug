@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/stylehome.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    
+  body
+    //script(src='/javascripts/globalprofile.js')
+    script(src='/javascripts/globalposts.js')
+    .container
+      a(style='border: 2px solid pink; padding: 0.5em; float: right;margin: 1em; background-color:white;' href='/logout') Log Out
+      header
+        h1 FriendsNearMe
+        p
+          | Welcome to 
+          b FriendsNearMe
+          | . Our basic CRUD app in node and MongoDb
+        
+      nav
+        ul
+          li
+            a(href='/home') Back to Home
+      article
+        //post view
+        #postview
+          h1 
+          h3
+          table(style='border-collapse:separate ,border-spacing:1px, background:#CCC;')
+                thead
+                    th(style='background:#EEE; font-weight:600; padding:10px 20px;text-align:center;') Post
+                    th(style='background:#EEE; font-weight:600; padding:10px 20px;text-align:center;') Posted by
+                    th(style='background:#EEE; font-weight:600; padding:10px 20px;text-align:center;') Privacy Setting: Hidden?
+                    th(style='background:#EEE; font-weight:600; padding:10px 20px;text-align:center;') Delete Post?
+                tbody(style='padding:0; margin:0; border-collapse:collapse; border-spacing:0px;')
+          
+          br  
+          p
+        // post view singular
+        #PostViewByID
+          p 
+    
+          h1 User Post: 
+          h5 posted by 
+
+          p1 message:  
+          br
+          p2 hide:     
+          

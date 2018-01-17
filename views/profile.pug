@@ -1,0 +1,100 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/stylehome.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    
+  body
+    script(src='/javascripts/globalprofile.js')
+    .container
+      a(style='border: 2px solid pink; padding: 0.5em; float: right;margin: 1em; background-color:white;' href='/logout') Log Out
+      header
+        h1 FriendsNearMe
+        p
+          | Welcome to 
+          b FriendsNearMe
+          | . Our basic CRUD app in node and MongoDb
+        
+      nav
+        ul
+          li
+            a#view(href='') View Posts
+          li
+            a#create(href='') Create Posts
+          li
+            a#edit(href='') Edit Profile
+          li
+            a(href='') Back to Home
+      article
+       
+        #homeView
+          h3 Welcome User! 
+          |
+          h5 You have logged in using 
+
+          div(class='col-sm-10')
+          h3 Your Profile
+          table
+            tr
+            td First Name
+            td#fname 
+            tr
+            td Last Name
+            td#lname
+            tr
+            td Dob
+            td#dob
+            tr
+            td University
+            td#uni
+            tr
+            td Address
+            td#addr
+            tr
+            td Phone Number
+            td#ph_no
+            tr
+            td Status
+            td#stat
+            //home view ends
+        
+        //edit view
+        #editView
+         div(class='col-sm-10')
+          h3 Edit Your Profile
+          h4 These are a few additional fields to boost your profile. You can keep updating these as you seem fit.
+        
+          form(method='POST' action='')
+            div.form-group
+             label(for='uni') University:
+             input#uni.form-control(type='text', placeholder='[UIUC],[UIC],[UIS]', name='uni')
+            br
+            div.form-group
+             label(for='ph') Phone Number:
+             input#ph.form-control(type='text', name='ph')
+            br
+            div.form-group
+             label(for='addr') Address:
+             input#addr.form-control(type='textarea', name='addr')
+            br
+            div.form-group
+             label(for='status') Status:
+             input#status.form-control(type='textarea', name='status')
+            br
+          button#editbtn.btn.btn-primary(type='submit') Update the changes made
+
+        //create view
+        #createView
+          
+          
+          form(method='POST' action='')
+            div(class='view1')
+            h3 Create your post
+            textarea#user_post(rows='5',cols='40' placeholder=' Enter your post.',required='true', name='user_post')
+            br
+            div.form-group
+             label(for='Hide from other?') Hide from other?
+             input#hide.form-control(type='text', placeholder='Yes/No', name='hide')
+            br
+          button#createpost.btn.btn-primary(type='submit') Create Post
+

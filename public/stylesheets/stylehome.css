@@ -1,0 +1,88 @@
+div.container {
+    position:fixed;
+    padding:1em;
+    margin:0;
+    top:01em;
+    left: 1em;
+    right: 1em;
+    bottom :1em;
+    width: 95%;
+    height: 93%;
+    border: 2px solid gray;
+    }
+    header {
+    padding: 1em;
+    color: white;
+    background-color: navy;
+    clear: left;
+    text-align: center;
+    }
+
+    
+    nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+    }
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    nav ul li{
+      margin:0 0 50px 0;
+    }
+
+    nav ul a {
+    text-decoration: none;
+    border: 2px solid pink;
+    padding: 0.5em;
+    }
+
+    article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    height:92%;
+    }
+
+    table {
+    font-family: arial, sans-serif;
+    width: 90%;
+    border-collapse: collapse;
+    }
+          
+    td {
+    border: 1px solid grey;
+    text-align: left;
+    padding: 8px;
+    }
+    p1 {
+    font-family: verdana;
+    font-size: 15px;
+    }
+    #userList {
+      margin:0 0 30px 0;
+    }
+      #userList table {
+        border-collapse:separate;
+        border-spacing:1px;
+        background:#CCC;
+      }
+        #userList table th {
+          background:#EEE;
+          font-weight:600;
+          padding:10px 20px;
+          text-align:center;
+        }
+        #userList table tbody {
+          padding:0; margin:0;
+          border-collapse:collapse;
+          border-spacing:0px;
+        }
+          #userList table td {
+            background:#FFF;
+            padding:5px 10px;
+            text-align:center;
+          }

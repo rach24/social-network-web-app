@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/stylehome.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    
+  body
+    //script(src='/javascripts/globalprofile.js')
+    script(src='/javascripts/globalposts.js')
+    .container
+      a(style='border: 2px solid pink; padding: 0.5em; float: right;margin: 1em; background-color:white;' href='/logout') Log Out
+      header
+        h1 FriendsNearMe
+        p
+          | Welcome to 
+          b FriendsNearMe
+          | . Our basic CRUD app in node and MongoDb
+        
+      nav
+        ul
+          li
+            a(href='/home') Back to Home
+      article
+        
+        // post view singular
+        #PostViewByID
+          p #[em #{note}]
+    
+          h1 #Post #{post.id}
+          h5 posted by #{post.email}
+
+          p1 message:  #{post.user_post}
+          br
+          p2 hide:     #{post.hide}
+          
+          br
+
+          form(method='POST' action='')
+            input(type='hidden', name='id', value=post.id)
+            br
+            button.btn.btn-primary(type='submit') Delete Post
+          

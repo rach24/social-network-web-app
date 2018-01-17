@@ -1,0 +1,55 @@
+extends layout
+
+block content
+  //sign in
+  #signin
+    h1= title
+    p Welcome to #[em #{title}]
+            
+    .main.container
+      .row
+        .col-md-6.col-md-offset-3
+          h1.display-4.m-b-2 Log In
+          form(method='POST' action='')
+            div.form-group
+             label(for='email') Email
+             input#emailid.form-control(type='text' placeholder='email' name='email' required='true')
+            div.form-group
+             label(for='password') Password
+             input#pwd.form-control(type='password' placeholder='password' name='password' required='true')
+          button#btnLogin.btn.btn-primary(type='submit') Log in 
+          
+    p
+     br
+     a#signuplink(href='') New User? Register Here!!
+    //signin end
+  
+  // sign up  
+  #signup
+    .row
+      a#loginlink(style='border: 2px solid pink; padding: 0.5em; float: left;margin: 1em' href='/') Go back to Login Page
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Sign Up
+        form(method='post' action='')
+              div.form-group
+                label(for='first_name') First Name:
+                input#first_name.form-control(type='text', placeholder='first name' name='first_name' required='true')
+              div.form-group
+                label(for='last_name') Last Name:
+                input#last_name.form-control(type='text', placeholder='last name' name='last_name' required='true')
+              div.form-group
+                label(for='email') Email:
+                input#email.form-control(type='email', placeholder='name@email.com' name='email' required='true')
+              div.form-group
+                label(for='pw') Password:
+                input#pw.form-control(type='password', placeholder='password' name='password' required='true')
+              div.form-group
+                label(for='pw2') Confirm Password:
+                input#pw2.form-control(type='password',placeholder='confirm password' name='confirmPassword')
+              div.form-group
+                label(for='dob') Date of Birth:
+                input#dob.form-control(type='date', placeholder='dd/mm/yyyy' name='dob')
+        button#btnAddUser.btn.btn-primary(type='submit') Sign up
+      //sign up end 
+    // /WRAPPER
+
