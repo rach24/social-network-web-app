@@ -1,10 +1,10 @@
 # CS 491 Secure Web Dev HomeWork 3 - An AJAX-Based CRUD App
-  We have created a basic CRUD single page app along the guidlines provided.
+ Created a basic CRUD single page app along the guidlines provided.
 
 ## Application
-  We have followed the MVC architecture for this app. We have separated out the data,presentarion and business logic layers into 'model','views' and 'controllers' folders respectively. We have also created a single .js file to hold all the routes of this application for maintainability. The client and server sides pass data only as JSON objects. No data is directly embedded in the view templates. 
+  Followed the MVC architecture for this app. We have separated out the data,presentarion and business logic layers into 'model','views' and 'controllers' folders respectively. We have also created a single .js file to hold all the routes of this application for maintainability. The client and server sides pass data only as JSON objects. No data is directly embedded in the view templates. 
 
-  We referred the threat models documentation share at- https://msdn.microsoft.com/en-us/library/ff648644.aspx, and as per our understaning we have cited the potential risks that the application might face
+  Referred the threat models documentation share at- https://msdn.microsoft.com/en-us/library/ff648644.aspx, and as per our understaning we have cited the potential risks that the application might face
     
 ###Threat model
 
